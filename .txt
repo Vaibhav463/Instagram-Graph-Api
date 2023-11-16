@@ -1,0 +1,69 @@
+                                                                                       For Instagram basic Display Api
+                                                                                  ------------------xxxxxx------------------
+
+1.   https://api.instagram.com/oauth/authorize?client_id=2406764826169788&redirect_uri=https://socialsizzle.heroku.com/&scope=user_profile,user_media&response_type=code
+
+2.   https://api.instagram.com/oauth/access_token   (body____x-www-form-urlencoded)
+code
+client_id      828850951818521
+client_secret e4d88f0fda3787c9c9e0c9a2bb579de4
+grant_type  authorization_code
+redirect_uri   https://socialsizzle.heroku.com/auth/
+
+
+---------------------------------------------------------------------------------------------xxxxxxxxxxxxxxxxxxxx------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+                                                                                             For Instagram Graph Api
+                                                                                        ------------xxxxxx-------------
+
+
+-->create a facebook account and create a page in it.
+
+--> Create a instagram business account and link that account with the facebook page.
+
+--> Create a App on (developer.facebook.com) for business and add instagram graph Api as a product.
+
+-->Use Graph Api Explorer in Facebook Developer App
+
+--> Select Your App in Meta App
+--> select Get User Access Token in User or page and give necessary Permissions and selecting all the pages and all the instagram accounts
+->Give all the necessary permissions and generate access token by logging in to facebook selecting all the facebook pages each page linked to each instagram account whose data we want to access.
+    (-)pages_manage_cta
+    (-)pages_manage_instant_articles
+    (-)pages_show_list
+    (-)pages_messaging
+    (-)instagram_basic
+    (-)instagram_manage_comments
+    (-)instagram_manage_insights
+    (-)instagram_content_publish
+    (-)pages_read_engagement
+    (-)pages_manage_metadata
+    (-)pages_read_user_content
+    (-)pages_manage_ads
+    (-)pages_manage_posts
+    (-)pages_manage_engagement
+
+
+
+1. / me?fields=id,name (submit)
+    It will give Facebook User Id and Name
+
+2. / me/accounts?access_token={access_token}
+    It will give Facebook Pages Id and Details
+
+3. {Page_id}/media?access_token={access_token}
+    It will give the Instagram User Id(instagram_user_id) Which We Will use to fetch the media and account details of instagram.
+    we have to provide the Page_Id of the Instagram account whose Instagram Id we want to get.
+
+4. {instagram_user_id}/media?access_token={access_token}
+    It will give all the media_id uploaded on that instagram account which we will further use to fetch the media (total likes,counts,media_type etc)
+
+5. https://graph.facebook.com/v17.0/${Insta_user_Id}?fields=business_discovery.username(${InstaUserName}){username,website,name,ig_id,id,profile_picture_url,biography,follows_count,followers_count,media_count,media{comments_count,like_count}}&access_token=${accessToken}
+    It will give all the Instagram Account info like their profile pic username name total followers total following etc.
+    We have to put the Insta_user_Id and Instausername of that account which we want the data of.
+
+6. https://graph.facebook.com/v17.0/${mediaId}?fields=id,media_product_type,media_type,caption,permalink,timestamp,username,media_url,like_count,comments_count,children{media_type,media_url}&access_token=${accessToken}
+    It will finally give the media details of that media like like_count comment_count media_Type media_url etc.
+    we have to give the particular media id of that media which we got from point 4.

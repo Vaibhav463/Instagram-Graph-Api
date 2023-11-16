@@ -1,0 +1,12 @@
+.facebookdiv {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background: #4e4eff;
+    height: 6rem;
+    margin-top: 2rem;
+}
+
+.facebookdiv button{
+    font-size: 2rem;
+}

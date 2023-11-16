@@ -1,0 +1,178 @@
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.account {
+  border: 2px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.selected-account {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+}
+
+.details {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.details-header {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.details-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.details-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.media-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.media-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #fff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+}
+
+.media-image {
+  height: 250px;
+  width: 500px;
+  /* height: auto; */
+  object-fit: scale-down;
+}
+
+.media-video {
+  max-width: 100%;
+  height: auto;
+}
+
+a.media-details-link {
+  word-wrap: break-word;
+}
+
+.media-caption {
+  color: #555;
+  margin-top: 5px;
+}
+
+.media-details-label {
+  font-weight: bold;
+  color: #777;
+}
+
+.media-details-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.imgandname {
+  padding: 20px;
+}
+
+.instgramdetails {
+  background-color: #cde5ff;
+  padding: 20px;
+}
+
+
+.success-message {
+  color: green;
+  font-weight: bold;
+}
+
+
+ul.list-unstyled.mt-5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+.stories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.story {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #fff;
+  max-width: 250px;
+  flex: 1;
+}
+
+.story-image,
+.story-video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.story-video {
+  width: 100%;
+  /* Ensure the video fills its container width */
+  height: auto;
+  /* Maintain the video's aspect ratio */
+}
+
+.video-placeholder {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Preserve aspect ratio and cover the video */
+}
+
+.composite-image {
+  display: flex; }
+
+.composite-image-item {
+  margin-right: 10px; 
+  max-width: 100%; 
+}
