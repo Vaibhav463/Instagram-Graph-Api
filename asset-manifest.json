@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Vaibhav463/Instagram-Graph-Api/static/css/main.637d2d97.css",
+    "main.js": "/Vaibhav463/Instagram-Graph-Api/static/js/main.ef94e0b5.js",
+    "static/js/787.88dbabcf.chunk.js": "/Vaibhav463/Instagram-Graph-Api/static/js/787.88dbabcf.chunk.js",
+    "index.html": "/Vaibhav463/Instagram-Graph-Api/index.html",
+    "main.637d2d97.css.map": "/Vaibhav463/Instagram-Graph-Api/static/css/main.637d2d97.css.map",
+    "main.ef94e0b5.js.map": "/Vaibhav463/Instagram-Graph-Api/static/js/main.ef94e0b5.js.map",
+    "787.88dbabcf.chunk.js.map": "/Vaibhav463/Instagram-Graph-Api/static/js/787.88dbabcf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.637d2d97.css",
+    "static/js/main.ef94e0b5.js"
+  ]
+}
