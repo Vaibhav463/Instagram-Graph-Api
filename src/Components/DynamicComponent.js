@@ -559,7 +559,10 @@ const DynamicComponent = React.memo(({ accessToken }) => {
                   />
                 ) : media.media_type === "VIDEO" ? (
                   <video
-                    controls
+                  autoPlay
+                  loop
+                  muted
+                    // controls
                     className="media-video card-img-top img-fluid"
                   >
                     <source src={media.media_url} type="video/mp4" />

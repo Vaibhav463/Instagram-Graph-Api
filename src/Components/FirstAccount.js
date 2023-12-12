@@ -4,7 +4,7 @@ import "../Style/FirstAccount.css"
 const FirstAccount = () => {
     const [instagramDetails, setInstagramDetails] = useState();
     const [mediaDetailsList, setMediaDetailsList] = useState([]);
-    const accessToken = 'EAAJld1YkjG8BO7tDTzxThadZA3Cl9wJ2zZA80xRmX51thZBebzhYgPBm08CvlyFeZAw2ZALLKIsEOTiZBkZCulNDKGfUE9N2TZCxEvZCJuINmWkWEcj1tMSgFngbd3pGkgPACgxoXlzFFRNgGrA4UrMj2g53q0qWj6H9WKKygZAkROz2AQ74MInXFhOmxBaNANuQjn';
+    const accessToken = 'EAAJxMI21tUEBO02Ry4gi26Fo87grpgpD961PifzdqXjQUMQUGrmozxmtwVBW6foLW5gUU5YZA5hxolu7bYW4sTwLUekpT9FfkkpAGnVVWKqoZCl3dyrTWxoVLAvmhv8oVYXrKbzMrJctUMzGvaqXq7PfLrzA5QuHDwwSIaYumu5JO3MDBiNBNtAVJ9JrwMzT8pJlauZCxTGf8rR';
     const InstaId = ['17841460873619739']
     const InstaUserName = ['test_account_0011']
     useEffect(() => {
@@ -83,7 +83,7 @@ const FirstAccount = () => {
                                                 <img className='carousel-image' src={childMedia.media_url} alt={`Carousel ${childIndex}`} />
                                             )}
                                             {childMedia.media_type === 'VIDEO' && (
-                                                <video className='carousel-image' controls>
+                                                <video className='carousel-image' autoplay loop muted>
                                                     <source src={childMedia.media_url} type="video/mp4" />
                                                     Your browser does not support the video tag.
                                                 </video>
@@ -113,3 +113,6 @@ const FirstAccount = () => {
 };
 
 export default FirstAccount;
+
+
+

@@ -42,7 +42,7 @@ import '../Style/Login.css';
 const Login = React.memo(({ onLoginSuccess }) => {
   const handleLogin = useCallback(() => {
     window.FB.init({
-      appId: '781805303679423',
+      appId: '687403303286081',
       cookie: true,
       xfbml: true,
       version: 'v17.0',
